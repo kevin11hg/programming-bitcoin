@@ -197,6 +197,9 @@ class Point:
                  
             return self.__class__(x3, y3, a, b)
                  
+            
+        if self == other and self.y == 0*self.y:
+            return self.__class_(None, None, self.a, self.b)
         raise NotImplementedError
 
 
